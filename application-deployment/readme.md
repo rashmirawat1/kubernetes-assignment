@@ -30,9 +30,7 @@ spec:
 ```text
 kubectl apply -f nginx-deployment.yaml
 ```
-Output:
-
-deployment.apps/nginx-deployment created
+Output: deployment.apps/nginx-deployment created
 
 
 - Check the deployment:
