@@ -62,6 +62,6 @@ spec:
 
 - Get the URL: minikube service nginx-service --url
     This gave me a local URL, and opening it showed the NGINX welcome page.
-    !(nginxpage.png)
+    ![Image](/application-deployment/nginxpage.png)
     
     
