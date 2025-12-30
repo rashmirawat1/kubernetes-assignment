@@ -62,5 +62,5 @@ spec:
 
 - Get the URL: minikube service nginx-service --url
     This gave me a local URL like http://192.168.49.2:30300, and opening it showed the NGINX welcome page.
-        ![image](https://github.com/rashmirawat1/kubernetes-assignment/application-deployment/nginxpage.png)
+        ![image](kubernetes-assignment/application-deployment/nginxpage.png)
     
