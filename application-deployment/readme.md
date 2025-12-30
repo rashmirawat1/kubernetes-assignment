@@ -61,7 +61,7 @@ spec:
 - Apply: kubectl apply -f nginx-service.yaml
 
 - Get the URL: minikube service nginx-service --url
-    This gave me a local URL, and opening it showed the NGINX welcome page.
-    ![Image](/application-deployment/nginxpage.png)
+This gave me a local URL, and opening it showed the NGINX welcome page.
+![Image](/application-deployment/nginxpage.png)
     
     
