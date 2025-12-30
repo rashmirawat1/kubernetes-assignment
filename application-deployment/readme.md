@@ -26,20 +26,24 @@ spec:
         - containerPort: 80
 ```
 
-- Apply the deployment: kubectl apply -f nginx-deployment.yaml
-Output:
-
+- Apply the deployment: 
 ```text
-deployment.apps/nginx-deployment created
+kubectl apply -f nginx-deployment.yaml
 ```
-
-- Check the deployment: kubectl get deployments
 Output:
 
+deployment.apps/nginx-deployment created
+
+
+- Check the deployment:
 ```text
+kubectl get deployments
+``` 
+Output:
+
 NAME               READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   2/2     2            2           1m
-```
+
 
 - To access it, create a Service YAML nginx-service.yaml:
 
@@ -58,13 +62,18 @@ spec:
   type: LoadBalancer
 ```
 
-- Apply: kubectl apply -f nginx-service.yaml
-
-- Get the URL: minikube service nginx-service --url
-
+- Apply:
 ```text
+kubectl apply -f nginx-service.yaml
+```  
+
+- Get the URL:
+```text
+minikube service nginx-service --url
+```   
+
 This gave me a local URL, and opening it showed the NGINX welcome page.
-```
+
 ![Image](/application-deployment/nginxpage.png)
     
     
