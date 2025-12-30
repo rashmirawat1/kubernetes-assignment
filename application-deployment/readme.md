@@ -39,11 +39,6 @@ deployment.apps/nginx-deployment created
 ```text
 kubectl get deployments
 ``` 
-Output:
-
-NAME               READY   UP-TO-DATE   AVAILABLE   AGE
-nginx-deployment   2/2     2            2           1m
-
 
 - To access it, create a Service YAML nginx-service.yaml:
 
